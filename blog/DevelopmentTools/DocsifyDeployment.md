@@ -1,11 +1,77 @@
-<!--
- * @Author: Cris Cui cxj2856801855@gmail.com
- * @Date: 2023-07-27 17:48:48
- * @LastEditors: Cris Cui cxj2856801855@gmail.com
- * @LastEditTime: 2023-07-28 14:26:38
- * @FilePath: \Cris-Cui.github.io\blog\index.html
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
--->
+# 从零开始搭建并部署个人知识库(GitHub Page + Docsify)
+> 使用Docsify搭建一个快捷、轻量级的个人&团队文档, 并且通过Github Pages免费托管我们的个人知识库文档
+
+## 知识库大概轮廓
+![](https://raw.githubusercontent.com/Cris-Cui/ImagesForBlog/master/Blog/1.png)
+
+![](https://raw.githubusercontent.com/Cris-Cui/ImagesForBlog/master/Blog/2.png)
+
+## 什么是Docsify？
+　　一个神奇的文档网站生成器。docsify 可以快速帮你生成文档网站。不同于 GitBook、Hexo 的地方是它不会生成静态的 .html 文件，所有转换工作都是在运行时。如果你想要开始使用它，只需要创建一个 index.html 就可以开始编写文档。
+
+## Docsify的特性
+> - 无需构建，写完文档直接发布
+> - 容易使用并且轻量 (压缩后 ~21kB)
+> - 智能的全文搜索
+> - 提供多套主题
+> - 丰富的 API
+> - 支持 Emoji
+> - 兼容 IE11
+> - 支持服务端渲染 SSR (示例)
+
+## 轻量&完善的Docsify模板
+该模板为一个简洁，并且完善的Docsify模板基本上可以满足百分之八十多的团队需求，你可以按照文章中的Docsify环境配置教程把运行Docsify所需要的环境配置起来，通过命令即可查看效果（配置环境顺利的话只要十来分钟）。
+```
+模板源码地址：Docsify-Guide
+
+模板预览地址：https://ysgstudyhards.github.io/Docsify-Guide/#/
+```
+
+## Node.js 安装配置
+> Nodejs下载地址
+> Node.js最新最详细安装教程
+
+win+r：cmd进入命令提示符窗口，分别输入以下命令查看node和npm的版本能够正常显示版本号，则安装成功：
+
+!!! note ""
+    node -v：显示安装的nodejs版本
+    npm -v：显示安装的npm版本
+
+
+## docsify-cli工具安装
+!!! tip
+    推荐全局安装 docsify-cli 工具，可以方便地创建及在本地预览生成的文档。
+
+```shell
+npm i docsify-cli -g
+```
+
+## 项目初始化
+> 如果想在项目的 `./docs` 目录里写文档，直接通过 `init` 初始化项目。
+
+```shell 
+docsify init ./docs
+```
+
+初始化成功后，可以看到 ./docs 目录下创建的几个文件
+
+- `index.html` 入口文件，可以对页面总体布局进行设置。
+
+- `README.md` 为主页内容渲染，直接编辑 `docs/README.md` 就能更新文档内容。
+
+- `.nojekyll` 用于阻止 `GitHub Pages` 忽略掉下划线开头的文件
+
+- 本地预览：
+
+	通过运行 `docsify serve` 启动一个本地服务器，可以方便地实时预览效果。默认访问地址 http://localhost:3000/ 。
+
+```shell
+docsify serve docs
+```
+
+## 配置
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,3 +165,12 @@
     </script>
 </body>
 </html>
+
+```
+
+
+## 参考文档
+- [Docsify中文手册](https://angry-swanson-b4e47b.netlify.app/zh-cn/)
+- [Docsify-Guide](https://ysgstudyhards.github.io/Docsify-Guide/#/)
+- [独立开发者@董川民](https://www.dongchuanmin.com/operate/5296.html)
+- [肆零肆'Blog](https://xmq.plus/posts/1654.html#toc-heading-33)
