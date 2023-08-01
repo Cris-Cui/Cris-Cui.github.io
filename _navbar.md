@@ -12,6 +12,8 @@
 * [计算机网络](./blog/network/_sidebar.md)
 * 操作系统
 * 数据库
+* [项目](./blog/project/_sidebar.md)
+* [算法](./blog/leetcode/_sidebar.md)
 * 链接到我  
   * [关于本人]() 
   * [博客园地址](https://www.cnblogs.com/SocialistYouth/)
