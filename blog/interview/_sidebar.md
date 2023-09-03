@@ -1,2 +1,3 @@
 - [技术面面经](./blog/interview/面经.md)
-- [HR面面经](./blog/nterview/hr面.md)
+- [美团面经](./blog/interview/美团面经.md)
+- [HR面面经](./blog/interview/hr面.md)
