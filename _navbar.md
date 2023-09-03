@@ -4,7 +4,7 @@
 * [首页]()
 * [C/C++](./blog/c++/_sidebar.md)
 * [计算机网络](./blog/network/_sidebar.md)
-* 操作系统
+* [操作系统](./blog/os/os.md)
 * [数据库](./blog/database/_sidebar.md)
 * [项目](./blog/project/_sidebar.md)
 * [算法](./blog/leetcode/_sidebar.md)
